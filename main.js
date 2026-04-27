@@ -182,3 +182,14 @@ ${messageText}
 const btn = document.querySelector(".contacts_form button");
 btn.disabled = true;
 setTimeout(() => btn.disabled = false, 3000);
+
+
+openOrder.onclick = () => {
+  orderModal.style.display = "block";
+  document.body.style.overflow = "hidden";
+};
+
+closeOrder.onclick = () => {
+  orderModal.style.display = "none";
+  document.body.style.overflow = "auto";
+};
