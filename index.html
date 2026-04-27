@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DROVA.OK</title>
+    <link rel="icon" type="image/png" href="img/tree-svgrepo-com 1.png" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Oswald:wght@400;500;600;700&family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <section class="header">
+      <div class="header_menu">
+        <div class="logo">
+          <img src="img/tree-svgrepo-com 1.png" />
+          <h1>DROVA.OK</h1>
+        </div>
+
+        <div class="burger" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav class="menu">
+          <ul>
+            <li><a href="#" onclick="showSection('hero')">Головна</a></li>
+            <li><a href="#" onclick="showSection('about')">Про нас</a></li>
+            <li><a href="#" onclick="showSection('prices')">Ціни</a></li>
+            <li><a href="#" onclick="showSection('delivery')">Доставка</a></li>
+            <li><a href="#" onclick="showSection('contacts')">Контакти</a></li>
+          </ul>
+        </nav>
+
+        <div class="contact">
+          <img src="img/phone-call 1.png" />
+          <h4><a href="tel:+380637554884">+38 (063) 755 48 84</a></h4>
+        </div>
+
+        <div class="btn-contact">
+          <a href="#" onclick="showSection('contacts')">Замовити дзвінок</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HERO -->
+    <section id="hero" class="page-section hero active">
+      <div class="hero_content">
+        <span class="hero_subtitle">
+          <img src="img/bonfire-svgrepo-com 1.png" />
+          <h6>Рубані дрова з доставкою</h6>
+        </span>
+
+        <h1>
+          Якісні дрова <br />
+          <span>для вашого тепла</span>
+        </h1>
+
+        <p>
+          Сухі рубані дрова твердих порід з доставкою по Білоцерківському району
+          та Білій Церкві.
+        </p>
+
+        <div class="hero_buttons">
+          <a href="#" id="openOrder" class="btn-primary">
+            <img src="img/Vector.png" />
+            Замовити дрова
+          </a>
+
+          <a href="#" id="openCalc" class="btn-secondary">
+            <img src="img/calculator-svgrepo-com 1.png" />
+            Рорахувати об'єм
+          </a>
+        </div>
+      </div>
+
+      <div class="hero_features">
+        <div class="feature">
+          <img src="img/leaf-svgrepo-com 1.png" />
+          <h4>Тверді породи</h4>
+          <p>Дуб, ясен, граб - максимальна теплова віддача</p>
+        </div>
+
+        <div class="feature">
+          <img src="img/drop-svgrepo-com 1.png" />
+          <h4>Сухі дрова</h4>
+          <p>Вологість 15–20% готові до використання</p>
+        </div>
+
+        <div class="feature">
+          <img src="img/Vector2.png" />
+          <h4>Доставка</h4>
+          <p>Доставка по Білоцерківському району</p>
+        </div>
+
+        <div class="feature">
+          <img src="img/Vector3.png" />
+          <h4>Чесний об’єм</h4>
+          <p>Ви отримуєте саме той об’єм, за який платите</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="page-section about-hero">
+      <div class="about-hero_container">
+        <div class="about-hero_content">
+          <span class="about_subtitle">
+            <img src="img/leaf-svgrepo-com 1.png" />
+            <h6>Хто ми такі</h6>
+          </span>
+
+          <h1>
+            Ми постачаємо <br />
+            <span>якісні дрова</span>
+          </h1>
+
+          <p>
+            DROVA.OK — це локальна компанія, яка займається заготівлею та
+            доставкою сухих дров твердих порід по Білоцерківському району.
+          </p>
+
+          <p>
+            Ми працюємо напряму без посередників, тому гарантуємо чесний об’єм,
+            стабільну якість та швидку доставку.
+          </p>
+
+          <div class="about_buttons">
+            <a href="#" onclick="showSection('contacts')" class="btn-primary"
+              >Замовити дрова</a
+            >
+            <a href="tel:+380637554884" class="btn-secondary">Зв’язатися</a>
+          </div>
+        </div>
+
+        <div class="about-hero_image">
+          <img src="img/pronasFoto.png" alt="Про нас" />
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICES -->
+    <section id="prices" class="page-section prices-hero">
+      <div class="prices_container">
+        <div class="prices_content">
+          <span class="prices_subtitle">
+            <img src="img/leaf-svgrepo-com 1.png" />
+            <h6>Актуальні ціни</h6>
+          </span>
+
+          <h1>
+            Ціни на <br />
+            <span>дрова з доставкою</span>
+          </h1>
+
+          <p>
+            Ми пропонуємо чесні ціни за 1 скл. м якісних рубаних дров твердих
+            порід. Вартість залежить від породи деревини.
+          </p>
+
+          <div class="prices_list">
+            <div class="price_card">
+              <h3>Дуб</h3>
+              <span class="price">2500 грн / скл. м</span>
+              <p>Максимальна тепло віддача</p>
+            </div>
+
+            <div class="price_card">
+              <h3>Граб</h3>
+              <span class="price">2500 грн / скл. м</span>
+              <p>Довго горить і тримає жар</p>
+            </div>
+
+            <div class="price_card">
+              <h3>Ясен</h3>
+              <span class="price">2500 грн / скл. м</span>
+              <p>Оптимальний варіант</p>
+            </div>
+
+            <div class="price_card">
+              <h3>Сосна</h3>
+              <span class="price">1 900 грн / скл. м</span>
+              <p>Швидке розпалювання</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DELIVERY -->
+    <section id="delivery" class="page-section delivery-hero">
+      <div class="delivery_container">
+        <div class="delivery_content">
+          <span class="delivery_subtitle">
+            <img src="img/Vector2.png" />
+            <h6>Умови доставки</h6>
+          </span>
+
+          <h1>
+            Швидка доставка <br />
+            <span>по району та місту</span>
+          </h1>
+
+          <p>
+            Ми доставляємо рубані дрова по Білоцерківському району та м. Біла
+            Церква. Доставка здійснюється власним транспортом без затримок.
+          </p>
+
+          <div class="delivery_steps">
+            <div class="step">
+              <span>1</span>
+              <h3>Оформлення</h3>
+              <p>Ви залишаєте заявку або телефонуєте нам</p>
+            </div>
+
+            <div class="step">
+              <span>2</span>
+              <h3>Підтвердження</h3>
+              <p>Ми узгоджуємо об’єм, породу та адресу</p>
+            </div>
+
+            <div class="step">
+              <span>3</span>
+              <h3>Доставка</h3>
+              <p>Привозимо дрова у зручний для вас час</p>
+            </div>
+          </div>
+
+          <div class="delivery_note">
+            <p>🚚 Доставка зазвичай займає 1 день після замовлення</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTS -->
+    <section id="contacts" class="page-section contacts-hero">
+      <div class="contacts_container">
+        <div class="contacts_content">
+          <span class="contacts_subtitle">
+            <img src="img/phone-call 1.png" />
+            <h6>Зв’язок з нами</h6>
+          </span>
+
+          <h1>
+            Контакти <br />
+            <span>для замовлення</span>
+          </h1>
+
+          <p>
+            Зателефонуйте нам або залиште заявку — ми швидко зв’яжемося і
+            допоможемо підібрати потрібний об’єм дров.
+          </p>
+
+          <div class="contacts_info">
+            <div class="info_box">
+              <h3>📞 Телефон</h3>
+              <a href="tel:+380637554884">+38 (063) 755 48 84</a>
+            </div>
+
+            <div class="info_box">
+              <h3>📍 Локація</h3>
+              <p>Білоцерківський район</p>
+            </div>
+
+            <div class="info_box">
+              <h3>⏰ Графік</h3>
+              <p>Пн–Нд: 08:00 – 20:00</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- форма -->
+        <div class="contacts_form">
+  <h2>Залишити заявку</h2>
+
+  <input id="contactName" type="text" placeholder="Ваше ім’я" />
+  <input id="contactPhone" type="tel" placeholder="Телефон" />
+  <textarea id="contactMessage" placeholder="Що вам потрібно?"></textarea>
+
+  <button onclick="sendContact()">Відправити заявку</button>
+</div>
+    </section>
+
+    <!-- ORDER MODAL -->
+    <div id="orderModal" class="modal">
+      <div class="modal-content">
+        <span id="closeOrder">&times;</span>
+
+        <h2>Замовлення дров</h2>
+
+        <!-- ВИБІР -->
+        <label>Порода дерева</label>
+        <select id="orderWood">
+          <option value="2500">Дуб</option>
+          <option value="2500">Граб</option>
+          <option value="2500">Ясен</option>
+          <option value="1900">Сосна</option>
+        </select>
+
+        <label>Об’єм (скл. м)</label>
+        <input id="orderVolume" type="number" placeholder="Наприклад 3" />
+
+        <label>Довжина (см)</label>
+        <select id="orderLength">
+          <option value="30">30 см</option>
+          <option value="35">35 см</option>
+          <option value="40">40 см</option>
+        </select>
+
+        <!-- ДАНІ -->
+        <label>ПІБ</label>
+        <input id="orderName" type="text" placeholder="Ваше ім’я" />
+
+        <label>Телефон</label>
+        <input id="orderPhone" type="tel" placeholder="+380..." />
+
+        <label>Адреса доставки</label>
+        <input id="orderAddress" type="text" placeholder="Ваше місто / село" />
+
+        <!-- СУМА -->
+        <div class="result">
+          <p>Сума: <span id="orderPrice">0</span> грн</p>
+        </div>
+
+        <button onclick="submitOrder()">Зробити замовлення</button>
+      </div>
+    </div>
+
+    <!-- MODAL -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="close">&times;</span>
+
+        <h2>Калькулятор</h2>
+
+        <select id="woodType">
+          <option value="2500">Дуб</option>
+          <option value="2500">Граб</option>
+          <option value="2500">Ясен</option>
+          <option value="1900">Сосна</option>
+        </select>
+
+        <input id="length" placeholder="Довжина" />
+        <input id="width" placeholder="Ширина" />
+        <input id="height" placeholder="Висота" />
+
+        <button onclick="calculate()">Розрахувати</button>
+
+        <div class="result">
+          <p>Об’єм: <span id="volume">0</span></p>
+          <p>Ціна: <span id="price">0</span></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
