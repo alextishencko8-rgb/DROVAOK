@@ -1085,3 +1085,35 @@ button:hover {
     display: none;
   }
 }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto; /* 🔥 дозволяє скрол всього модального */
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  background: #fff;
+  margin: 40px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+
+  max-height: 90vh; /* 🔥 обмежує висоту */
+  overflow-y: auto; /* 🔥 включає скрол всередині */
+
+  border-radius: 10px;
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+    margin: 20px auto;
+    padding: 15px;
+  }
+}
